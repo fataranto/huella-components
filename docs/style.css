@@ -7,17 +7,80 @@
     --primary-color-active: #e95d52;
     --secondary-color: #fff;
     --secondary-color-active: #fff5f4;
+    --background-color: #FFF8E1;
   }
 
 body {
-    font-family: Inter, Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     color: var(--primary-text-color);
+    margin:0;
+    padding: 0;
 }
+
+
+h1{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+h2 {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+.container {
+    padding: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    margin-bottom: 50px;
+    display: flex;
+}
+
+
+
+
+/* color */
+.color-box{
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+.color-primary {
+    background-color: var(--primary-color);
+}
+
+.color-active {
+    background-color: var(--primary-color-active);
+}
+
+.color-backgrounds {
+    background-color: var(--background-color);
+}
+
+.color-primary-text {
+    background-color: var(--primary-text-color);
+}
+
+
+
+
+
+
 .button {
     background-color: #eee;
     font-size: 12px;
     color: var(--primary-text-color);
     padding: 6px 36px;
+    margin-right: 25px;
     border-radius: 6px;
     border: none;
     cursor: pointer;
