@@ -64,8 +64,25 @@
                 <button class="button button-success">Success</button>
                 <button class="button button-info">Info</button>
             </div>
+            <h3>Action Buttons</h3>
+            <button class="button button-primary join-event">Unirme</button> 
             
         </div>
     </div>
+
+    <script>
+        const joinEvent = document.querySelector('.join-event');
+        joinEvent.addEventListener('click', () => {
+            if (joinEvent.classList.contains('button-primary')) {
+                joinEvent.classList.remove('button-primary');
+                joinEvent.classList.add('button-secondary');
+                joinEvent.textContent = 'Dejar el evento';
+            } else {
+                joinEvent.classList.remove('button-secondary');
+                joinEvent.classList.add('button-primary');
+                joinEvent.textContent = 'Unirme';
+            }
+        }); 
+    </script>
 </body>
 </html>
